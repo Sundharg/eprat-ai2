@@ -1,0 +1,38 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Local backup copies
+*.backup
+*.before-*
+*.v15-backup
+*.v16-backup
+
+# Backup files with extensions
+*.backup.*

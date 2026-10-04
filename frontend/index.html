@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EPRAT AI — Expert Platform for AI Research & Tools</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        /* =====================================================
+           EPRAT AI BRAND
+           ===================================================== */
+
+        .brand-lockup {
+            display: flex;
+            align-items: center;
+            height: 72px;
+        }
+
+        /*
+         * The EPRAT AI PNG already contains:
+         * EPRAT AI
+         * Expert Platform for AI Research & Tools
+         */
+        .brand-lockup img {
+            width: 155px;
+            height: 58px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* =====================================================
+           HERO LOGO
+           ===================================================== */
+
+        .hero-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .hero-brand img {
+            width: 200px;
+            height: 140px;
+            object-fit: contain;
+            display: block;
+            transform: scale(1.08);
+        }
+
+        .hero .badge {
+            margin-top: 2px;
+        }
+
+        /* =====================================================
+           HERO BRAND EXPANSION
+           ===================================================== */
+
+        .hero > .brand-expansion {
+            margin-top: 8px;
+            font-size: 10px;
+            color: #8e9bb3;
+            letter-spacing: 0.15px;
+            white-space: nowrap;
+        }
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-align: center;
+        }
+
+        footer strong {
+            font-size: 18px;
+
+            background: linear-gradient(
+                90deg,
+                #ffffff,
+                #8ea0ff
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-expansion {
+            font-size: 12px;
+            color: #7f8ba3;
+            opacity: 0.8;
+        }
+
+        /* =====================================================
+           MOBILE
+           ===================================================== */
+
+        @media (max-width: 700px) {
+
+            .brand-lockup {
+                height: 64px;
+            }
+
+            .brand-lockup img {
+                width: 130px;
+                height: 50px;
+            }
+
+            .hero-brand {
+                margin-bottom: 10px;
+            }
+
+            .hero-brand img {
+                width: 170px;
+                height: 120px;
+            }
+
+            .hero > .brand-expansion {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- EPRAT AI full logo -->
+    <div class="brand-lockup">
+
+        <img
+            src="/assets/eprat-ai-logo.png"
+            alt="EPRAT AI — Expert Platform for AI Research & Tools"
+        >
+
+    </div>
+
+    <nav>
+
+        <a href="#models">
+            Models
+        </a>
+
+        <a href="#compare">
+            Compare
+        </a>
+
+        <a href="#local">
+            Local AI
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <!-- =====================================================
+         HERO LOGO
+         ===================================================== -->
+<!-- =====================================================
+         HERO CONTENT
+         ===================================================== -->
+
+    <div class="badge">
+        AI DISCOVERY PLATFORM
+    </div>
+
+    <h1>
+        Find the right AI<br>
+        for your job.
+    </h1>
+
+    <p>
+        Discover, compare and understand AI models
+        for coding, reasoning, local AI and more.
+    </p>
+
+    <div class="brand-expansion">
+        Expert Platform for AI Research &amp; Tools
+    </div>
+
+    <!-- =====================================================
+         SEARCH
+         ===================================================== -->
+
+
+    <!-- =====================================================
+         QUICK FILTERS
+         ===================================================== -->
+</section>
+
+<!-- =========================================================
+     MODEL DIRECTORY
+     ========================================================= -->
+
+<section id="models">
+
+    <div class="section-title">
+
+        <div>
+
+            <h2>
+                AI Models
+            </h2>
+
+            <p>
+                Explore available model families.
+            </p>
+
+        </div>
+
+        <span id="count"></span>
+
+    </div>
+
+    <div
+        id="model-grid"
+        class="model-grid"
+    >
+
+        <div class="loading">
+            Loading models...
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     COMPARE
+     ========================================================= -->
+
+<section
+    id="compare"
+    class="compare-section"
+>
+
+    <h2>
+        Compare AI Models
+    </h2>
+
+    <p>
+        Select models to compare them.
+    </p>
+
+    <div id="comparison">
+
+        <div class="empty">
+            Select models above to compare.
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ===========================================================
+     FOOTER
+     =========================================================== -->
+
+<footer>
+
+    <strong>
+        EPRAT AI
+    </strong>
+
+    <span>
+        Find the right AI. Compare it. Test it. Use it.
+    </span>
+
+    <span class="footer-expansion">
+        Expert Platform for AI Research &amp; Tools
+    </span>
+
+</footer>
+
+<script src="/app.js"></script>
+
+</body>
+</html>
+
+

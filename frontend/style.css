@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    background: #080b12;
+    color: #f5f7fb;
+}
+
+/* =======================================================
+   HEADER
+   ======================================================= */
+
+header {
+    height: 72px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1d2330;
+}
+
+/* Header logo image */
+.brand-logo {
+    width: 150px;
+    height: auto;
+    max-height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Fallback text logo */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #7c8cff;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #9da6b8;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* =======================================================
+   MAIN
+   ======================================================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px 80px;
+}
+
+/* =======================================================
+   HERO
+   ======================================================= */
+
+.hero {
+    text-align: center;
+    padding: 100px 0 80px;
+}
+
+/* Large hero logo */
+.hero-logo {
+    width: 240px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 32px;
+}
+
+/* If the image is wrapped inside a container */
+.hero-logo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hero-logo-wrap img {
+    width: 240px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.badge {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px solid #30384a;
+    border-radius: 30px;
+    color: #9da6b8;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: .98;
+    margin: 24px 0;
+    letter-spacing: -4px;
+}
+
+.hero p {
+    color: #9da6b8;
+    font-size: 19px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* =======================================================
+   SEARCH
+   ======================================================= */
+
+.search-box {
+    max-width: 700px;
+    margin: 38px auto 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #30384a;
+    background: #111621;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.search-box button {
+    padding: 0 28px;
+    border: 0;
+    border-radius: 12px;
+    background: #7c8cff;
+    color: white;
+    font-weight: 700;
+}
+
+/* =======================================================
+   QUICK BUTTONS
+   ======================================================= */
+
+.quick-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.quick-buttons button {
+    background: #111621;
+    border: 1px solid #30384a;
+    color: #c8cfdb;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+/* =======================================================
+   SECTION TITLES
+   ======================================================= */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.section-title h2,
+.compare-section h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.section-title p,
+.compare-section > p {
+    color: #8993a6;
+}
+
+#count {
+    color: #8993a6;
+}
+
+/* =======================================================
+   MODEL GRID
+   ======================================================= */
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.model-card {
+    padding: 24px;
+    background: #111621;
+    border: 1px solid #202838;
+    border-radius: 18px;
+}
+
+.model-card:hover {
+    border-color: #465170;
+}
+
+.model-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.model-icon {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #20283a;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.model-card h3 {
+    margin: 0 0 4px;
+}
+
+.model-card small {
+    color: #8993a6;
+}
+
+.model-card p {
+    color: #aeb6c5;
+    line-height: 1.55;
+    min-height: 72px;
+}
+
+/* =======================================================
+   TAGS
+   ======================================================= */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    padding: 5px 9px;
+    background: #1b2230;
+    color: #aeb6c5;
+    border-radius: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.tags .local {
+    color: #8fe3b0;
+}
+
+/* =======================================================
+   COMPARE BUTTON
+   ======================================================= */
+
+.compare-btn {
+    width: 100%;
+    padding: 11px;
+    border-radius: 9px;
+    border: 1px solid #384257;
+    background: transparent;
+    color: white;
+}
+
+.compare-btn:hover {
+    background: #20283a;
+}
+
+/* =======================================================
+   COMPARISON
+   ======================================================= */
+
+.compare-section {
+    margin-top: 100px;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.comparison-card {
+    background: #111621;
+    border: 1px solid #30384a;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.comparison-card > p {
+    color: #8993a6;
+}
+
+.compare-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 13px 0;
+    border-top: 1px solid #202838;
+}
+
+.compare-row span {
+    color: #8993a6;
+}
+
+/* =======================================================
+   STATES
+   ======================================================= */
+
+.empty,
+.loading,
+.error {
+    padding: 50px;
+    text-align: center;
+    color: #8993a6;
+    background: #111621;
+    border: 1px solid #202838;
+    border-radius: 16px;
+}
+
+/* =======================================================
+   FOOTER
+   ======================================================= */
+
+footer {
+    border-top: 1px solid #1d2330;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    color: #8993a6;
+}
+
+footer strong {
+    color: white;
+}
+
+/* =======================================================
+   RESPONSIVE
+   ======================================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        padding: 0 5%;
+    }
+
+    .brand-logo {
+        width: 125px;
+        max-height: 42px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero-logo {
+        width: 190px;
+        max-height: 85px;
+        margin-bottom: 26px;
+    }
+
+    .hero-logo-wrap img {
+        width: 190px;
+        max-height: 85px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* =====================================================
+   EPRAT AI RECOMMENDER ALIGNMENT
+   ===================================================== */
+
+#eprat-recommend {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+#eprat-recommend .recommend-inner {
+    width: 100%;
+}
+
+
+/* =======================================================
+   COMPARISON HIGHLIGHTS
+======================================================= */
+
+.comparison-best {
+    color: #7ee787;
+    font-weight: 700;
+    position: relative;
+}
+
+.comparison-best::after {
+    content: " BEST";
+    font-size: 10px;
+    margin-left: 6px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background: rgba(126, 231, 135, 0.12);
+    letter-spacing: 0.4px;
+}
+
