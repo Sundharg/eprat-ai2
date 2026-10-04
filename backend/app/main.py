@@ -1115,7 +1115,7 @@ def robots():
     return PlainTextResponse(
         "User-agent: *\n"
         "Allow: /\n"
-        "Sitemap: http://127.0.0.1:8000/sitemap.xml\n"
+        "Sitemap: https://epratai.com/sitemap.xml\n"
     )
 
 
@@ -1123,11 +1123,11 @@ def robots():
 def sitemap():
 
     urls = [
-        "http://127.0.0.1:8000/"
+        "https://epratai.com/"
     ]
 
     urls.extend(
-        f"http://127.0.0.1:8000/models/{model['id']}"
+        f"https://epratai.com/models/{model['id']}"
         for model in MODELS
     )
 
@@ -1164,6 +1164,7 @@ def frontend(
     return FileResponse(
         FRONTEND_DIR / "index.html"
     )
+
 
 
 
